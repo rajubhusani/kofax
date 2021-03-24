@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cp_mainparent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Capture layout showing the capture controls -->
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_capture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/review_frame"
+        android:layout_below="@id/topLayout"
+        android:visibility="visible">
+
+        <com.kofax.kmc.kui.uicontrols.ImageCaptureView
+            android:id="@+id/imageCaptureView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.kofax.kmc.kui.uicontrols.ImgReviewEditCntrl
+            android:id="@+id/imageReview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <FrameLayout
+            android:id="@+id/fl_capture_hint_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp">
+
+            <com.fab.kofax.uicontrols.VerticalTextView
+                android:id="@+id/capture_user_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:contentDescription="@string/tap_to_capture"
+                android:text="@string/camera_view_front_hint_text"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_manual_capture_hint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/manual_capture_hint_bg"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <com.fab.kofax.uicontrols.VerticalTextView
+                android:id="@+id/tv_manual_capture_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:contentDescription="@string/tap_to_capture"
+                android:text="@string/tap_to_capture"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/review_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/rescan_btn"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:text="@string/rescan"
+            android:drawableStart="@drawable/ic_icon_retake"
+            android:background="@drawable/rounded_corners"/>
+
+        <Button
+            android:id="@+id/use_btn"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:text="@string/use"
+            android:layout_toEndOf="@id/rescan_btn"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_icon_check"
+            android:background="@drawable/rounded_corners"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/capture_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ToggleButton
+            android:id="@+id/tgl_btn_torch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/torch_toggle_bg"
+            android:gravity="center"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:backgroundTint="@android:color/white"
+            android:indeterminateTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/pbText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="10dp"
+            android:text="@string/processing_document"/>
+
+    </LinearLayout>
+</RelativeLayout>

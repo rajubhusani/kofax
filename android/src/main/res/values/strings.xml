@@ -1,0 +1,30 @@
+<resources>
+<string name="app_name">FABKofax</string>
+<string name="cameraunavailable">Camera is unavailable</string>
+<string name="rescan">RESCAN</string>
+<string name="use">CONTINUE</string>
+<string name="tap_to_capture">Tap to capture</string>
+<string name="THE_IMAGE_IS">The image is</string>
+<string name="BLURRED">blurred</string>
+<string name="OVER_SATURATED">over-saturated</string>
+<string name="UNDER_SATURATED">under saturated</string>
+<string name="SHADOWED">shadowed</string>
+<string name="GLARE_DETECTED">unusable due to excessive glare</string>
+<string name="MISSING_BORDERS">missing borders</string>
+<string name="OVERLY_SKEWED">overly skewed</string>
+<string name="LOW_CONTRAST_BACKGROUND_DETECTED">unusable due to a low contrast background</string>
+<string name="FRONT_IMAGE_ANALYSIS_FEEDBACK">Front Image Analysis Results:</string>
+<string name="and">and</string>
+<string name="commo">,</string>
+<string name="camera_view_front_hint_text">Place the FRONT side of the cheque into the FRAME</string>
+<string name="camera_view_back_hint_text">Place the BACK side of the cheque into the FRAME</string>
+<string name="review_error">Unable to show the captured image</string>
+<string name="process_error">Unable to process the captured image</string>
+<string name="cancelled_error">User cancelled the action</string>
+<string name="invalid_scan_error">MICR Line found, please scan the back side of the cheque</string>
+<string name="processing_document">Processing Document&#8230;</string>
+<string name="invalid_front_scan_error">MICR Line not found, please scan the front side of the cheque</string>
+    <string name="endorsement_line1">TRUE COPY OF CHEQUE DEPOSITED WITH FAB</string>
+    <string name="endorsement_line2">THAT UNDERTAKES TO PRESENT IT UPON</string>
+    <string name="endorsement_line3">REQUEST.</string>
+</resources>

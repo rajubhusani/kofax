@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - kofax (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - kofax (from `.symlinks/plugins/kofax/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  kofax:
+    :path: ".symlinks/plugins/kofax/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  kofax: e93aad7102bc21e694a424f15ee4beea5e5098b8
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0

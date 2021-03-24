@@ -1,0 +1,509 @@
+{
+    "components": [
+      {
+        "screentexts": {
+          "preview": {
+            "frontretakebutton": "Retake",
+            "backretakebutton": "Retake",
+            "cancelbutton": "Cancel",
+            "frontusebutton": "Use",
+            "backusebutton": "Use"
+          },
+          "summary": {
+            "checknumber": "Check Number",
+            "amount": "Amount",
+            "instructiontext": "Select an account, Enter amount and then take photos of front and back of the check",
+            "submitalerttext": "Deposit Submitted For Processing",
+            "micr": "MICR",
+            "instructiontextforback": "Take a photo of back of the check",
+            "routingnumber": "Routing Number",
+            "depositto": "Deposit To",
+            "submitbuttontext": "Make Deposit",
+            "submitcancelalerttext": "Do you want to cancel the Check Deposit?"
+          },
+          "camera": {
+            "ueuserinstructionfront": "Fill viewable area with check",
+            "ueuserinstructionback": "Fill viewable area with check",
+            "uemovecloser": "Move Closer",
+            "uemoveback": "Move Back",
+            "ueholdsteady": "Hold Steady",
+            "uecenter": "Center Check",
+            "uecaptured": "Done!",
+            "ueholdparallel": "Hold Device More Flat",
+            "ueorientation": "Rotate Device"
+          }
+        },
+        "componentgraphics": {
+          "showinstructionscreen": true,
+          "instructionimage": "",
+          "homescreenlogo": ""
+        },
+        "submitto": "NONE",
+        "type": "Check Deposit",
+        "settings": {
+          "extractionsettings": {
+            "rttiserverurl": "https:\/\/mobiledemo.kofax.com:443\/mobilesdk\/api\/CheckDeposit?customer=Kofax",
+            "ktaserverurl": "",
+            "sockettimeout": 10,
+            "connectiontimeout": 10,
+            "fieldlabels": "",
+            "showdefaultfields": true,
+            "highlightextracteddata": false,
+            "saveoriginalimage": false,
+            "showhighlightsswitch": true,
+            "extractionservertype": 0,
+            "ktasessionid": "C640521793431F4486D4EF1586672385",
+            "ktaprocessname": "KofaxCheckDeposit"
+          },
+          "advancedsettings": {
+            "checkextraction": 2,
+            "showinstruction": true,
+            "showcheckinfo": true,
+            "checkforduplicates": true,
+            "searchmicr": true,
+            "usehandprint": true,
+            "isfirsttimecheckdemo": true,
+            "checkvalidationatserver": true,
+            "numberofdocumentstocapture": 1,
+            "showcapturedemo": true
+          },
+          "camerasettings": {
+            "captureexperiencemode": 0,
+            "capturetype": 1,
+            "edgedetection": 0,
+            "pitchthreshold": 15,
+            "rollthreshold": 15,
+            "stabilitydelay": 95,
+            "manualcapturetimer": 15,
+            "frameaspectratio": "6.0/2.75",
+            "targetframepadding": 9,
+            "offsetthreshold": 85,
+            "showgallery": false,
+            "maxfillfraction": 1.5,
+            "minfillfraction": 0.65,
+            "tolerancefraction": 0.15,
+            "maxskewangle": 10,
+            "autotorche": false,
+            "showcapturedemo": true
+          },
+          "evrssettings": {
+            "scale": 1,
+            "cskewsettingsstring": "",
+            "backgroundsmoothing": false,
+            "usebankrightsettings": true,
+            "mode": 0,
+            "doquickanalysis": false,
+            "deskew": true,
+            "sendimagesummary": false,
+            "autocrop": true,
+            "cskewsettings": true,
+            "sharpen": 0,
+            "imageprocessing": true,
+            "deskewby": 1,
+            "despeckle": 0,
+            "autorotate": true
+          }
+        },
+        "name": "Check Deposit"
+      },
+      {
+        "screentexts": {
+          "preview": {
+            "cancelbutton": "Cancel",
+            "frontusebutton": "Use",
+            "frontretakebutton": "Retake"
+          },
+          "summary": {
+            "submitalerttext": "Coupon Submitted For Processing",
+            "submitbuttontext": "Make Payment",
+            "instructiontext": "Take a photo of Payment Coupon",
+            "submitcancelalerttext": "Do you want to cancel the payment?"
+          },
+          "camera": {
+            "ueuserinstructionfront": "Fill viewable area with payment coupon",
+            "uemovecloser": "Move Closer",
+            "uemoveback": "Move Back",
+            "ueholdsteady": "Hold Steady",
+            "uecenter": "Center Payment coupon",
+            "uecaptured": "Done!",
+            "ueholdparallel": "Hold Device More Flat",
+            "ueorientation": "Rotate Device"
+          }
+        },
+        "componentgraphics": {
+          "showinstructionscreen": true,
+          "instructionimage": "",
+          "homescreenlogo": ""
+        },
+        "submitto": "NONE",
+        "type": "Pay Bills",
+        "settings": {
+          "extractionsettings": {
+            "rttiserverurl": "https:\/\/mobiledemo.kofax.com:443\/mobilesdk\/api\/billpay?customer=Kofax",
+            "ktaserverurl": "",
+            "sockettimeout": 10,
+            "connectiontimeout": 10,
+            "fieldlabels": "",
+            "showdefaultfields": true,
+            "highlightextracteddata": false,
+            "saveoriginalimage": false,
+            "showhighlightsswitch": true,
+            "extractionservertype": 0,
+            "ktasessionid": "C640521793431F4486D4EF1586672385",
+            "ktaprocessname": "KofaxBillPay"
+          },
+          "advancedsettings": {
+            "checkextraction": 0,
+            "showinstruction": false,
+            "showcheckinfo": false,
+            "checkforduplicates": false,
+            "searchmicr": false,
+            "usehandprint": false,
+            "checkvalidationatserver": false,
+            "numberofdocumentstocapture": 0
+          },
+          "camerasettings": {
+            "captureexperiencemode": 0,
+            "capturetype": 0,
+            "edgedetection": 1,
+            "pitchthreshold": 15,
+            "rollthreshold": 15,
+            "stabilitydelay": 95,
+            "manualcapturetimer": 10,
+            "frameaspectratio": 0,
+            "targetframepadding": 9,
+            "offsetthreshold": 85,
+            "showgallery": false,
+            "maxfillfraction": 1.5,
+            "minfillfraction": 0.65,
+            "tolerancefraction": 0.15,
+            "maxskewangle": 10,
+            "autotorche": false,
+            "showcapturedemo": true
+          },
+          "evrssettings": {
+            "scale": 1,
+            "cskewsettingsstring": "",
+            "backgroundsmoothing": false,
+            "usebankrightsettings": true,
+            "mode": 0,
+            "doquickanalysis": false,
+            "deskew": true,
+            "sendimagesummary": false,
+            "autocrop": true,
+            "cskewsettings": true,
+            "sharpen": 0,
+            "imageprocessing": true,
+            "deskewby": 1,
+            "despeckle": 0,
+            "autorotate": true
+          }
+        },
+        "name": "Pay Bills"
+      },
+      {
+        "screentexts": {
+          "preview": {
+            "frontusebutton": "Use",
+            "backusebutton": "Use",
+            "frontretakebutton": "Retake",
+            "backretakebutton": "Retake",
+            "cancelbutton": "Cancel"
+          },
+          "summary": {
+            "submitalerttext": "ID Submitted For Processing",
+            "submitbuttontext": "Submit",
+            "instructiontext": "Capture your information simply by taking a photo of your ID",
+            "submitcancelalerttext": "Do you want to cancel submission of the ID Card?"
+          },
+          "camera": {
+            "ueuserinstructionfront": "Fill viewable area with ID card",
+            "ueuserinstructionback": "Fill viewable area with ID card",
+            "uemovecloser": "Move Closer",
+            "uemoveback": "Move Back",
+            "ueholdsteady": "Hold Steady",
+            "uecenter": "Center ID card",
+            "uecaptured": "Done!",
+             "ueholdparallel": "Hold Device More Flat",
+             "ueorientation": "Rotate Device"
+          }
+        },
+        "componentgraphics": {
+          "showinstructionscreen": true,
+          "instructionimage": "",
+          "homescreenlogo": ""
+        },
+        "submitto": "NONE",
+        "type": "ID Card",
+        "settings": {
+          "extractionsettings": {
+           "rttiserverurl": "https:\/\/mobiledemo.kofax.com\/mobilesdk\/api\/MobileID",
+            "ktaserverurl": "",
+            "odemodelsserverurl": "https:\/\/mobilertti-beta\/mobileupdater\/api\/ODEDownload",
+            "sockettimeout": 10,
+            "connectiontimeout": 10,
+            "fieldlabels": "",
+            "showdefaultfields": true,
+            "highlightextracteddata": false,
+            "saveoriginalimage": false,
+            "showhighlightsswitch": false,
+            "extractionservertype": 2,
+            "ktasessionid": "C640521793431F4486D4EF1586672385",
+            "ktakofaxsessionid": "C640521793431F4486D4EF1586672385",
+            "authenticktasessionid": "C640521793431F4486D4EF1586672385",
+            "ktaprocessname": "KofaxMobileID",
+            "ktaidtype": "ID",
+            "odelicenseserverurl":"",
+            "odeacquirecount": 10,
+            "odelicenseservertype":0
+          },
+          "advancedsettings": {
+            "checkextraction": 0,
+            "showinstruction": false,
+            "showcheckinfo": false,
+            "checkforduplicates": false,
+            "searchmicr": false,
+            "usehandprint": false,
+            "checkvalidationatserver": false,
+            "numberofdocumentstocapture": 0
+          },
+          "camerasettings": {
+            "captureexperiencemode": 0,
+            "capturetype": 1,
+            "edgedetection": 1,
+            "pitchthreshold": 15,
+            "rollthreshold": 15,
+            "stabilitydelay": 95,
+            "manualcapturetimer": 10,
+            "frameaspectratio": 1,
+            "targetframepadding": 9,
+            "offsetthreshold": 85,
+            "showgallery": false,
+            "maxfillfraction": 1.5,
+            "minfillfraction": 0.65,
+            "tolerancefraction": 0.15,
+            "maxskewangle": 10,
+            "autotorche": false,
+            "showcapturedemo": true
+          },
+          "evrssettings": {
+            "scale": 2,
+            "cskewsettingsstring": "",
+            "backgroundsmoothing": false,
+            "usebankrightsettings": true,
+            "mode": 2,
+            "doquickanalysis": false,
+            "deskew": true,
+            "sendimagesummary": false,
+            "autocrop": true,
+            "cskewsettings": true,
+            "sharpen": 0,
+            "imageprocessing": true,
+            "deskewby": 1,
+            "despeckle": 0,
+            "autorotate": true
+          }
+        },
+        "name": "ID Card"
+      },
+      {
+        "screentexts": {
+          "summary": {
+            "submitalerttext": "Payment Submitted For Processing",
+            "submitbuttontext": "Submit Payment",
+            "instructiontext": "Take a photo of Credit Card and submit for payment",
+            "submitcancelalerttext": "Do you want to cancel the credit card payment?"
+          },
+          "camera": {
+            "ueuserinstructionfront": "Fill viewable area with card",
+            "ueuserinstructionback": "Fill viewable area with card",
+            "uemovecloser": "Move Closer",
+            "uemoveback": "Move Back",
+            "ueholdsteady": "Hold Steady",
+            "uecenter": "Center card",
+            "uecaptured": "Done!",
+            "ueholdparallel": "Hold Device More Flat",
+            "ueorientation": "Rotate Device"
+          }
+        },
+        "componentgraphics": {
+          "showinstructionscreen": true,
+          "instructionimage": "",
+          "homescreenlogo": ""
+        },
+        "submitto": "",
+        "type": "Credit Card",
+        "settings": {
+          "extractionsettings": {
+           "rttiserverurl": "https://mobiledemo.kofax.com\/mobilesdk\/api\/cardcapture",
+           "sockettimeout": 10,
+           "connectiontimeout": 10,
+           "extractionservertype": 0,
+           "cardtype":2
+          },
+          "camerasettings": {
+           "captureexperiencemode": 0,
+           "capturetype": 0,
+           "edgedetection": 1,
+           "pitchthreshold": 15,
+           "rollthreshold": 15,
+           "stabilitydelay": 95,
+           "manualcapturetimer": 10,
+           "frameaspectratio": 0,
+           "targetframepadding": 9,
+           "offsetthreshold": 85,
+           "showgallery": false,
+           "maxfillfraction": 1.5,
+           "minfillfraction": 0.65,
+           "tolerancefraction": 0.15,
+           "maxskewangle": 10,
+           "autotorche": false,
+           "showcapturedemo": true
+        },
+        "evrssettings": {
+          "scale": 1,
+          "cskewstring": "",
+          "backgroundsmoothing": false,
+          "usebankrightsettings": true,
+          "mode": 2,
+          "deskew": true,
+          "autocrop": true,
+          "cskewsettings": false,
+          "sharpen": 0,
+          "imageprocessing": true,
+          "deskewby": 1,
+          "despeckle": 0,
+          "autorotate": true
+          }
+        },
+        "name": "Credit Card"
+      },
+      {
+        "screentexts": {
+          "preview": {
+            "frontretakebutton": "Retake",
+            "backretakebutton": "Retake",
+            "cancelbutton": "Cancel",
+            "frontusebutton": "Use",
+            "backusebutton": "Use"
+          },
+          "summary": {
+            "submitalerttext": "Passport Submitted for Processing",
+            "submitbuttontext": "Submit",
+            "instructiontext": "Capture the information page",
+            "submitcancelalerttext": "Do you want to cancel submission of the Passport?"
+          },
+          "camera": {
+            "ueuserinstructionback": "Fill viewable area with passport",
+            "uemovecloser": "Move Closer",
+            "uemoveback": "Move Back",
+            "ueholdsteady": "Hold Steady",
+            "uecenter": "Center Passport",
+            "uecaptured": "Done!",
+            "ueuserinstructionfront": "Fill viewable area with passport",
+            "ueholdparallel": "Hold Device More Flat",
+            "ueorientation": "Rotate Device"
+          }
+        },
+        "componentgraphics": {
+          "showinstructionscreen": true,
+          "instructionimage": "",
+          "homescreenlogo": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAABC1JREFUaIHtmE2IVWUYx3+vM6NjlokzSoFQ2caxwi9o1BYT1cIWUa2jCMvZSiYtlFa5VCKoVRTpDIKbavoYIYvKsm81VGoWIYMRQuM1GSPH1H4tznPzeFC7584d3Zw/XO7heZ/P8/E8//eFChUqVKhQocL1Q2qlMzUBXcA84GZgeiydBcaBMaCWUrJVMVtWgLocWA8sJyugA5gRy2eBc2QF7AdeSSkdbEXcaZN1oPaoO4A9wG1kiR4DFgAfxm8B8CvwN3AH8LG6Q1082fhNF6BOU9cBu8PPA8DzwGxgfUrpTF03rtcDc4ANoTsNGFafVSd9I5tJvl89pW5SO9QZ6m51u9oeervUXXHdrg6ow6HboW4OH/1qWzO5tDdZw1pgK9l7fiswC7gduBtYlVI6XzRIKZ1XNwFfAT3AKHAL2XeyFRB4vWwipQuI9/ZFYAvwbfx/D/wGfA6cuor5H8Be4GWy7+I4sAboBTar+1JKP5XJp3QXig+2DXg6pXROvRHoA4aAGtmd3Q8cAZ4gu7M7gXuAFWRPqgt4BNibUvpT7QDeAv5JKT1ZNqcyyS9TT6hLCvJn1APqXeoG9SP1kDoev0Mh26AuVg+qaws+lqo1ddlUJZ/iA/1U7czJ29QP1FdjkNVlXep76lBct+X8vKa+n+8+amf43l730wjKtK8usiE1lFKayMm7gYXAcH3CppQupJRqwBlgIqVUSyldiDWB4bDprjsJn+9GjLlTUcA8YD7ZwCoW1gV8U8LX12HTXZB/kovTEMoUMBuYCYxcRj6RUjrZqKPQPQvcVFj6GbghfDaEMm10BlnfH9BLuNh8YI668zI2KwGusDYH2KKOFeTTucih/hfXYoS3jHlOCmpvtMS2gnyVeuwKNv9RicusHVNXFmRtEaO30bzKPIFxsq6yqCA/DXSqXY06UruBzrDNowf4K2I1hDIFjAG/Aw8V5DXgJHBfCV+rw6ZWkD+Yi9MQyhRQAw4Aj+UHWQQcBdYUBxlZR5lZHGTAw8DRsCXkncDjEaPhjlYK6vIrUIn+oAeLgi7sUQ+rp+OdPhxU4rnYAP0Ye4m8j6XhuxSVaIbMDZA9uTyZu59sip4EfuEimasTs0Eyqr0CuJNsiD0KfFYgcxdSSk+VzalsAT3qqPqC2qd+oY7ERuVtdVZO95IupM5S34mNz0jY9oWvUbVnSpPPJbIuXo0z6jZ1trpEPa4uvEoBC0NnSdhsCx/jan8zuTQ7yN4ENpLRgTppGwF+AF4ytpR5hGxL6IyETZ1SbATeaDKX5mBs6uPRD8Zd7VWPqqtDJ78nXh1r94buYNhe+019oZAes836CfVL9Yj6XfD7XfHrDNlhdV/o7mjFO9/Kg61lZEcnK8gocTsZexWYAM4zBQdbU3G0OJeLR4t1VjlBRg9O0OKjxQoVKlSoUKHC9cS/TkVCqiCyJ9wAAAAASUVORK5CYII="
+        },
+        "submitto": "NONE",
+        "type": "Custom Component",
+        "settings": {
+          "extractionsettings": {
+            "rttiserverurl": "https:\/\/mobiledemo.kofax.com\/mobilesdk\/api\/MobileID?class=passport",
+            "ktaserverurl": "",
+            "sockettimeout": 30,
+            "connectiontimeout": 30,
+            "fieldlabels": "FirstName,FirstName;MiddleName,MiddleName;LastName,LastName;DateOfBirth,DateOfBirth;Gender,Gender;IssueDate,IssueDate;ExpirationDate,ExpirationDate;PassportNumber,PassportNumber;Country,Country;CountryLong,CountryLong;Nationality,Nationality;PersonalNumber,PersonalNumber;MRZ1,MRZ1;MRZ2,MRZ2",
+            "showallfields": false,
+            "highlightextracteddata": false,
+            "saveoriginalimage": false,
+            "showhighlightsswitch": false,
+            "extractionservertype": 0,
+            "ktasessionid": "C640521793431F4486D4EF1586672385",
+            "ktaprocessname": "KofaxMobileID",
+            "ktaidtype": "Passport",
+            "odelicenseserverurl":"",
+            "odeacquirecount": 10,
+            "odelicenseservertype":0
+          },
+          "advancedsettings": {
+            "checkextraction": 0,
+            "showcheckinfo": false,
+            "checkforduplicates": false,
+            "searchmicr": false,
+            "usehandprint": false,
+            "checkvalidationatserver": false,
+            "numberofdocumentstocapture": 1
+          },
+          "camerasettings": {
+            "captureexperiencemode": 0,
+            "capturetype": 0,
+            "edgedetection": 1,
+            "pitchthreshold": 15,
+            "rollthreshold": 15,
+            "stabilitydelay": 95,
+            "manualcapturetimer": 0,
+            "frameaspectratio": 0.69,
+            "targetframepadding": 9,
+            "offsetthreshold": 85,
+            "showgallery": false,
+            "maxfillfraction": 1.5,
+            "minfillfraction": 0.65,
+            "tolerancefraction": 0.15,
+            "maxskewangle": 10,
+            "autotorch": false,
+            "showcapturedemo": true
+          },
+          "evrssettings": {
+            "scale": 1,
+            "cskewstring": "",
+            "backgroundsmoothing": false,
+            "usebankrightsettings": true,
+            "mode": 2,
+            "doquickanalysis": false,
+            "deskew": true,
+            "sendimagesummary": false,
+            "autocrop": true,
+            "cskewsettings": false,
+            "sharpen": 0,
+            "imageprocessing": true,
+            "deskewby": 1,
+            "despeckle": 0,
+            "autorotate": true
+          }
+        },
+        "name": "Passport"
+      }
+    ],
+    "metadata": {
+      "footer": "\u00A9 2017 Kofax Mobile Demo",
+      "id": 1,
+      "apptitle": "BankRight",
+      "theme": {
+        "titlecolor": "#FFFFFF",
+        "color": "#0079C2",
+        "buttontextcolor": "#FFFFFF",
+        "buttoncolor": "#0079C2",
+        "buttoncornerstyle": 0,
+        "buttoncolorstyle": 0
+      },
+      "name": "BankRight",
+      "numberofcomponents": 5,
+      "graphics": {
+        "homescreenbackground": "",
+        "logo": "",
+        "loginscreenbackground": ""
+      },
+      "credentials": {
+        "loginurl": "mobiledemo.kofax.com",
+        "password": "test",
+        "username": "test"
+      },
+      "loginrequired": false
+    }
+  }

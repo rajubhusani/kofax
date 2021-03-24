@@ -1,0 +1,73 @@
+group 'com.fab.kofax'
+version '1.0-SNAPSHOT'
+
+def jniLibsArray = ['libs']
+def license = 'v,jfFRq^$hUFv4L&r[EN!GUn0!O$7f=Kl!A`(0!nR2N!!vgxIFB?$$ld^[t6[Id9N8Pz`mxt56kfbWUdk6dc0&lB;vtc,(5Z`rrx'
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+
+    viewBinding {
+        enabled = true
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.jniLibs.srcDirs = jniLibsArray
+    }
+    defaultConfig {
+        minSdkVersion 21
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+        abortOnError false
+        enable 'unchecked', 'deprecation'
+    }
+    buildTypes {
+
+        debug {
+            buildConfigField "String", "LICENSE", /"$license"/
+            buildConfigField "Boolean", "DEBUG_MODE", "true"
+        }
+        release {
+            buildConfigField "String", "LICENSE", /"$license"/
+            buildConfigField "Boolean", "DEBUG_MODE", "false"
+        }
+    }
+}
+
+dependencies {
+    repositories {
+        flatDir { dirs 'libs' }
+    }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['javax.inject-1.jar', 'dagger-2.15.jar'])
+    implementation files('libs/sdk-release.aar')
+}
